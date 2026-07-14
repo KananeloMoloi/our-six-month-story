@@ -4,6 +4,51 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-ivory: oklch(0.985 0.012 85);
+  --color-cream: oklch(0.955 0.02 80);
+  --color-ink: oklch(0.18 0.02 30);
+  --color-rose: oklch(0.68 0.16 15);
+  --color-rose-soft: oklch(0.86 0.06 15);
+  --color-gold: oklch(0.78 0.11 75);
+}
+
+@keyframes drift {
+  0%, 100% { transform: translate3d(0,0,0) scale(1); opacity: .55; }
+  50% { transform: translate3d(2%, -1.5%, 0) scale(1.04); opacity: .85; }
+}
+@keyframes breathe {
+  0%, 100% { opacity: .35; letter-spacing: .18em; }
+  50% { opacity: .95; letter-spacing: .22em; }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+@keyframes heart-pop {
+  0% { transform: scale(0) rotate(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: scale(1.2) translateY(-80px) rotate(20deg); opacity: 0; }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@utility font-display { font-family: var(--font-display); }
+@utility font-body { font-family: var(--font-body); }
+
+@utility animate-drift { animation: drift 14s ease-in-out infinite; }
+@utility animate-breathe { animation: breathe 6s ease-in-out infinite; }
+@utility animate-floaty { animation: floaty 5s ease-in-out infinite; }
+@utility animate-fade-up { animation: fade-up 1.2s ease-out both; }
+
 /*
  * Design system definition.
  *
@@ -140,5 +185,7 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
   }
 }

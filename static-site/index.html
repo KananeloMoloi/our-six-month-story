@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Six Months — For Itumeleng</title>
+    <meta name="description" content="A love letter and countdown for Itumeleng — six months, 182.5 days, and every second of us." />
+    <meta property="og:title" content="Six Months — For Itumeleng" />
+    <meta property="og:description" content="A love letter and countdown for Itumeleng." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Cormorant Garamond"', 'ui-serif', 'Georgia', 'serif'],
+              body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              ivory: '#fbf7ee',
+              cream: '#f4ecd8',
+              ink: '#241a15',
+              rose: '#c04a5b',
+              'rose-soft': '#e6b8bf',
+              gold: '#d9b26a',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html, body { background: #fbf7ee; color: #241a15; font-family: 'Inter', system-ui, sans-serif; }
+      .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+      @keyframes drift { 0%,100%{transform:translate3d(0,0,0) scale(1);opacity:.55} 50%{transform:translate3d(2%,-1.5%,0) scale(1.04);opacity:.9} }
+      @keyframes breathe { 0%,100%{opacity:.35;letter-spacing:.18em} 50%{opacity:.95;letter-spacing:.22em} }
+      @keyframes floaty { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+      @keyframes heart-pop { 0%{transform:scale(0);opacity:0} 15%{opacity:1} 100%{transform:scale(1.2) translateY(-80px) rotate(20deg);opacity:0} }
+      @keyframes fade-up { from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:translateY(0)} }
+      .animate-drift{animation:drift 14s ease-in-out infinite}
+      .animate-breathe{animation:breathe 6s ease-in-out infinite}
+      .animate-floaty{animation:floaty 5s ease-in-out infinite}
+      .animate-fade-up{animation:fade-up 1.2s ease-out both}
+      .paper { background:#fff; box-shadow: 0 20px 40px -20px rgba(60,20,20,0.35); }
+      .reveal { opacity:0; transform:translateY(24px); transition: opacity 1s ease, transform 1s ease; }
+      .reveal.on { opacity:1; transform:translateY(0); }
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <main class="min-h-screen">
+      <!-- HERO -->
+      <section id="hero" class="relative h-[100svh] min-h-[640px] w-full overflow-hidden cursor-pointer select-none">
+        <video id="heroVideo" class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline preload="auto">
+          <source src="https://assets.mixkit.co/videos/2408/2408-720.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0" style="background:linear-gradient(to bottom, rgba(251,247,238,0.35), rgba(160,60,70,0.35), rgba(20,10,10,0.6));"></div>
+        <div class="absolute inset-0" style="background:radial-gradient(ellipse at center, transparent 0%, rgba(20,10,10,0.4) 100%);"></div>
+        <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <div class="text-center px-6">
+            <p class="animate-breathe uppercase tracking-[0.35em] text-[11px] sm:text-sm text-white/90 mb-6">15 · 03 · 2026</p>
+            <h1 class="font-display italic text-white leading-[0.95]" style="text-shadow:0 6px 30px rgba(0,0,0,0.35);">
+              <span class="block text-6xl sm:text-8xl md:text-9xl animate-drift">Six</span>
+              <span class="block text-5xl sm:text-7xl md:text-8xl -mt-2 animate-drift" style="animation-delay:1.5s">Months</span>
+              <span class="mt-4 block text-lg sm:text-2xl not-italic font-normal tracking-[0.4em] uppercase text-white/85">of us</span>
+            </h1>
+            <p class="mt-8 font-display italic text-white/85 text-lg sm:text-2xl animate-floaty">for Itumeleng, my favorite place to stay</p>
+          </div>
+        </div>
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 text-xs tracking-[0.3em] uppercase animate-floaty">scroll · tap anywhere</div>
+      </section>
+
+      <!-- QUOTE -->
+      <section class="mx-auto max-w-3xl px-6 py-24 text-center">
+        <p class="font-display italic text-2xl sm:text-4xl leading-snug reveal">“Though it didn’t start with you, <span class="text-rose">it definitely ends with you.</span>”</p>
+        <div class="mx-auto mt-8 h-px w-24 bg-rose/50"></div>
+      </section>
+
+      <!-- LETTER -->
+      <section class="mx-auto max-w-3xl px-6 pb-16">
+        <header class="mb-14 text-center">
+          <p class="uppercase tracking-[0.4em] text-xs text-rose mb-3">a letter</p>
+          <h2 class="font-display text-4xl sm:text-5xl italic">everything I’ve been meaning to say</h2>
+        </header>
+        <div id="letter" class="space-y-10"></div>
+        <div class="mt-16 flex justify-center">
+          <figure class="paper my-10 mx-auto max-w-lg p-3 pb-10" style="transform:rotate(2deg);transition:transform .4s ease;" onmouseover="this.style.transform='rotate(0) scale(1.02)'" onmouseout="this.style.transform='rotate(2deg)'">
+            <img src="couple-4.jpg" alt="quiet moments" loading="lazy" class="w-full aspect-[3/4] object-cover" />
+            <figcaption class="text-center mt-3 font-display italic text-sm text-ink/70">quiet moments</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="bg-cream py-24">
+        <div class="mx-auto max-w-5xl px-6 text-center">
+          <p class="uppercase tracking-[0.4em] text-xs text-rose mb-3">six months of us, in numbers</p>
+          <h2 class="font-display italic text-4xl sm:text-5xl mb-14">every second has counted</h2>
+          <div class="grid grid-cols-2 md:grid-cols-5 gap-6" id="stats"></div>
+          <p class="mt-10 font-display italic text-lg text-ink/70">…and I’d start over and count them all again with you.</p>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="mx-auto max-w-6xl px-6 py-24">
+        <div class="text-center mb-14">
+          <p class="uppercase tracking-[0.4em] text-xs text-rose mb-3">us, lately</p>
+          <h2 class="font-display italic text-4xl sm:text-5xl">frames I keep going back to</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6" id="gallery"></div>
+      </section>
+
+      <!-- COUNTDOWN -->
+      <section class="relative overflow-hidden bg-ink text-ivory py-24">
+        <div class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full animate-drift" style="background:rgba(192,74,91,0.25);filter:blur(60px);"></div>
+        <div class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full animate-drift" style="background:rgba(217,178,106,0.2);filter:blur(60px);animation-delay:2s;"></div>
+        <div class="relative mx-auto max-w-4xl px-6 text-center">
+          <p class="uppercase tracking-[0.4em] text-xs text-rose-soft mb-3">counting down to</p>
+          <h2 class="font-display italic text-4xl sm:text-6xl mb-2">your birthday, my love</h2>
+          <p class="text-sm sm:text-base text-white/60 mb-12">21 September · the day the world got its best gift</p>
+          <div class="grid grid-cols-4 gap-3 sm:gap-6" id="countdown"></div>
+          <p class="mt-14 font-display italic text-xl sm:text-2xl text-white/85 max-w-2xl mx-auto">I love you and will forever love you, <span class="text-rose-soft">sthandwa sam</span> ❤️</p>
+        </div>
+      </section>
+
+      <footer class="bg-ink text-white/50 text-center py-8 text-xs tracking-[0.3em] uppercase border-t border-white/5">made with ❤️ for Itumeleng Nhlapo</footer>
+    </main>
+
+    <script>
+      // Hero video fallback
+      const v = document.getElementById('heroVideo');
+      v.addEventListener('error', () => {
+        if (!v.dataset.fallback) {
+          v.dataset.fallback = '1';
+          v.innerHTML = '<source src="https://assets.mixkit.co/videos/4275/4275-720.mp4" type="video/mp4">';
+          v.load(); v.play().catch(()=>{});
+        }
+      });
+
+      // Tap-anywhere hearts on hero
+      const hero = document.getElementById('hero');
+      hero.addEventListener('click', (e) => {
+        const rect = hero.getBoundingClientRect();
+        const h = document.createElement('span');
+        h.textContent = '❤️';
+        h.style.cssText = `position:absolute;pointer-events:none;font-size:24px;left:${e.clientX-rect.left}px;top:${e.clientY-rect.top}px;animation:heart-pop 1.4s ease-out forwards;`;
+        hero.appendChild(h);
+        setTimeout(()=>h.remove(), 1500);
+      });
+
+      // Letter
+      const LETTER = [
+        "Love of my life 🥹  My soulmate 🥹  My babe 🥹  My lover 🥹  My bestfriend 🥹",
+        "It's exactly 6 months ago today when I felt the courage to just say what I felt for you 🥹 I thought it was deep feelings and emotions but it was more than that ❤️ it was a real valid connection and a lot more dedication and inspiration ❤️",
+        "From the moment I laid eyes on you, you sparked real interest in me 🥹 it was like I saw my exact mirror in you, the female version of me 🥹",
+        "And from since that day my life has truly been a wonder 🥹 for I had received a blessing 🥹 an angel in human form ❤️. I've had so much more than I have ever gotten in my entire life with you ❤️ more than just love but completeness ❤️",
+        "From all the walks, the talks, the sacrifices, the commitments and love ❤️ it has all been on the highest levels and standards 🥹 you've really set the bar high for me and I'm just glad I never have to choose another person anymore cause though it didn't start with you it definitely ends with you 🥹🥹❤️",
+        "I've had people around me but you are just my favorite, fabulous and marvelous person 🥹🥹❤️",
+        "I can't explain how much I love you, adore you, appreciate you, respect you and just cherish you 🥹🥹❤️ but it's more than just a lot and biggest ❤️ it's just something beyond explaining ❤️",
+        "I love you dearly and so much, Itumeleng Nhlapo 🥹❤️ you have been and will forever be my favorite place to stay 🥹",
+      ];
+      const PHOTOS = [
+        { src:'couple-1.jpg', cap:'the peace signs' },
+        { src:'couple-2.jpg', cap:'silly & ours' },
+        { src:'couple-3.jpg', cap:'hand in hand' },
+        { src:'couple-4.jpg', cap:'quiet moments' },
+      ];
+      const INSERT_AT = {1:{p:0,rot:'-2deg'}, 3:{p:1,rot:'1.5deg'}, 5:{p:2,rot:'-1deg'}};
+      const letterEl = document.getElementById('letter');
+      LETTER.forEach((para, i) => {
+        const wrap = document.createElement('div');
+        const p = document.createElement('p');
+        p.className = 'font-display text-xl sm:text-2xl leading-[1.7] reveal';
+        p.textContent = para;
+        wrap.appendChild(p);
+        if (INSERT_AT[i]) {
+          const {p:pi, rot} = INSERT_AT[i];
+          const ph = PHOTOS[pi];
+          const fig = document.createElement('figure');
+          fig.className = 'paper my-10 mx-auto max-w-xs p-3 pb-10';
+          fig.style.cssText = `transform:rotate(${rot});transition:transform .4s ease;`;
+          fig.onmouseover = () => fig.style.transform = 'rotate(0) scale(1.02)';
+          fig.onmouseout = () => fig.style.transform = `rotate(${rot})`;
+          fig.innerHTML = `<img src="${ph.src}" alt="${ph.cap}" loading="lazy" class="w-full aspect-[3/4] object-cover"><figcaption class="text-center mt-3 font-display italic text-sm text-ink/70">${ph.cap}</figcaption>`;
+          wrap.appendChild(fig);
+        }
+        letterEl.appendChild(wrap);
+      });
+
+      // Reveal on scroll
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+      // Stats
+      const STATS = [
+        {n:'6', l:'months'}, {n:'182.5', l:'days'}, {n:'4,380', l:'hours'},
+        {n:'262,800', l:'minutes'}, {n:'15,768,000', l:'seconds'},
+      ];
+      document.getElementById('stats').innerHTML = STATS.map(s => `
+        <div class="rounded-2xl bg-white/70 backdrop-blur border border-rose/20 px-4 py-6 shadow-[0_10px_30px_-20px_rgba(60,20,20,0.35)] hover:-translate-y-1 transition-all">
+          <div class="font-display text-3xl sm:text-4xl italic">${s.n}</div>
+          <div class="mt-2 uppercase tracking-[0.25em] text-[10px] text-ink/60">${s.l}</div>
+        </div>`).join('');
+
+      // Gallery
+      document.getElementById('gallery').innerHTML = PHOTOS.map(p => `
+        <figure class="group relative overflow-hidden rounded-xl bg-cream aspect-[3/4] shadow-[0_10px_30px_-15px_rgba(50,20,20,0.4)]">
+          <img src="${p.src}" alt="${p.cap}" loading="lazy" class="h-full w-full object-cover transition-transform duration-[1200ms] group-hover:scale-105" />
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 font-display italic text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity">${p.cap}</figcaption>
+        </figure>`).join('');
+
+      // Countdown to next 21 September
+      function nextBirthday() {
+        const now = new Date();
+        let t = new Date(now.getFullYear(), 8, 21, 0, 0, 0);
+        if (t.getTime() < now.getTime()) t = new Date(now.getFullYear()+1, 8, 21, 0, 0, 0);
+        return t;
+      }
+      const target = nextBirthday();
+      const cd = document.getElementById('countdown');
+      function tick() {
+        const diff = Math.max(0, target.getTime() - Date.now());
+        const d = Math.floor(diff/86400000);
+        const h = Math.floor((diff/3600000)%24);
+        const m = Math.floor((diff/60000)%60);
+        const s = Math.floor((diff/1000)%60);
+        const units = [{n:d,l:'days'},{n:h,l:'hours'},{n:m,l:'minutes'},{n:s,l:'seconds'}];
+        cd.innerHTML = units.map(u => `
+          <div class="relative rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur px-2 py-6 sm:px-4 sm:py-8">
+            <div class="font-display italic text-4xl sm:text-6xl tabular-nums">${String(u.n).padStart(2,'0')}</div>
+            <div class="mt-2 uppercase tracking-[0.3em] text-[10px] sm:text-xs text-white/60">${u.l}</div>
+          </div>`).join('');
+      }
+      tick(); setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
